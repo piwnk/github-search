@@ -6,7 +6,7 @@ export default class App extends Component {
    constructor() {
       super();
       this.state = {
-         searchText: '',
+         searchText: 'piwnk',
          users: []
       };
    }
@@ -30,7 +30,9 @@ export default class App extends Component {
 
    render() {
       return (
-         <div>
+         <div
+            className="wrp"
+         >
             <form onSubmit={event => this.onSubmit(event)}>
                <label htmlFor="searchText">Search by user name</label>
                <input
@@ -40,7 +42,9 @@ export default class App extends Component {
                   value={this.state.searchText}
                />
             </form>
-            <UsersList users={this.state.users} />
+            <UsersList
+               users={this.state.users}
+            />
          </div>
       );
    }

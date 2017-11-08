@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrp {
+  padding: 30px;
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+.wrp * {
+  background-color: white;
+}
+
+.wrp form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+.wrp form label {
+  margin-right: 20px;
+}
+
+.wrp form input {
+  font-size: 1em;
+  border: lightblue 2px solid;
+}
+
+.wrp .users {
+  padding: 30px;
+}
+
+.wrp .users.empty {
+  display: none;
+}
+
+.wrp .users .user {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 5px;
+  border: coral 1px solid;
+}
+
+.wrp .users .user img {
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+  transform: scale(0.8);
+  box-shadow: 0 0 10px  black;
+}
+
+.wrp .users .user a {
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  color: black;
+  font-size: 3em;
+  text-shadow: 0 0 5px  black;
+}
+
+.wrp .users .user p {
+  align-self: center;
+  font-size: 3em;
+  text-shadow: 0 0 5px  black;
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */
